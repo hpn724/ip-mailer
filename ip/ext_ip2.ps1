@@ -18,7 +18,7 @@ $message.subject = $subject
 $message.body = $body
 $message.to.add($to)
 
-$message.from = $username
+$message.from = IP-Mailer <$username>
 $message.attachments.add($attachment)
 
 $smtp = New-Object System.Net.Mail.SmtpClient($SMTPServer, $SMTPPort);
